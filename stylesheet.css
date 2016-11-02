@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+}
+
+/*Menu*/
+
+#menu {
+	height: 6vh;
+	width: 100%;
+	position: fixed;
+	background-color: #3399ff;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+
+li {
+	display: inline;
+	height: 8vh;
+	width: auto;
+	float: left;
+}
+
+li a {
+	text-decoration: none;
+	padding: 14px 16px;
+	text-align: center;
+	color: white;
+
+}
+
+
+/*Header*/
+
+
+/*Information*/
+
+
+/*Footer*/
