@@ -5,7 +5,6 @@ body {
 /*Menu*/
 
 #menu {
-	height: 6vh;
 	width: 100%;
 	position: fixed;
 	background-color: #3399ff;
@@ -21,18 +20,21 @@ ul {
 }
 
 li {
-	display: inline;
-	height: 8vh;
-	width: auto;
 	float: left;
 }
 
 li a {
+	display: block;
 	text-decoration: none;
-	padding: 14px 16px;
+	padding: 13px 19px;
 	text-align: center;
 	color: white;
 
+}
+
+li a:hover {
+	background-color: white;
+	color: #3399ff;
 }
 
 
