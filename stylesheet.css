@@ -90,17 +90,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    background: url("../PnP/images/header.png")no-repeat;
-    background-size: cover;
-    background-position: center;
-		margin-top: 0;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column;
-		flex-direction: column;
-		-webkit-align-items: center;
-		align-items: center;
-		padding-top: 2vh;
+  background: url("../PnP/images/header.png")no-repeat;
+  background-size: cover;
+  background-position: center;
+	margin-top: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	padding-top: 2vh;
 }
 
 .title {
@@ -109,14 +109,12 @@ body {
 	text-align: center;
 	top: auto;
 }
-/*
 
-#background {
-    position: relative;
-    width: 100%;
-    height: auto;
+div img {
+	width: 50px;
+	background-color: blue;
 }
-*/
+
 
 /*Information*/
 
