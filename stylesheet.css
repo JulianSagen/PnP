@@ -10,7 +10,7 @@ body {
 	position: fixed;
 	background-color: #2d2dd2;
  	box-shadow: 0 2px 5px -0px black, inset 0 0 5px #2929a3;
-    z-index: 4;
+  z-index: 4;
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
 
 }
@@ -60,12 +60,32 @@ ul {
 /*Information*/
 
 .infobox {
-	width: 70vw;
+	width: 60vw;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: blue;
+	background-color: #fdfdf7;
+	padding: 30px;
+	text-align: justify;
+	box-shadow: 0 0 15px darkgrey;
+	margin-top: 20px;
 }
 
+.infobox h3 {
+	text-align: center;
+	color: #2d2dd2;
+}
+
+#box1 {
+
+}
+
+#box2 {
+
+}
+
+#box3 {
+
+}
 
 /*Footer*/
