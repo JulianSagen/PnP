@@ -12,8 +12,12 @@ body {
 	width: 100%;
 	position: fixed;
 	background-color: #2d2dd2;
+<<<<<<< Updated upstream
  	box-shadow: 0 2px 5px -0px black, inset 0 0 5px #2929a3 ;
     z-index: 4;
+=======
+ 	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3 ;
+>>>>>>> Stashed changes
 
 }
 
@@ -70,8 +74,8 @@ li a:hover {
 
 #background {
     position:relative;
-    width:1000px;
-    height:1000px;
+    width:100vw;
+    height:auto;
 
 }
 
