@@ -35,7 +35,7 @@ li {
 	float: left;
 }
 
-li a {
+#menu li a {
 	display: block;
 	text-decoration: none;
 	padding: 13px 23px;
@@ -48,7 +48,7 @@ li a {
 	border-bottom: 3px solid transparent;
 }
 
-li a:hover {
+#menu li a:hover {
 	border-bottom: 3px solid white;
 }
 
