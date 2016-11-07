@@ -202,3 +202,7 @@ footer li a {
 	float: right;
 	width: 100px;
 }
+
+#socialIcons img {
+	width: 20px;
+}
