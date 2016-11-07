@@ -10,6 +10,12 @@ body {
 	background-color: #3399ff;
 }
 
+#logo {
+	height: 25px;
+	float: left;
+	padding: 8px 19px;
+}
+
 
 ul {
 	list-style-type: none;
@@ -29,12 +35,15 @@ li a {
 	padding: 13px 19px;
 	text-align: center;
 	color: white;
+	text-shadow: 1px 1px 3px grey;
+	font-size: 20px;
 
 }
 
 li a:hover {
 	background-color: white;
 	color: #3399ff;
+	box-shadow: 0 0 5px blue;
 }
 
 
