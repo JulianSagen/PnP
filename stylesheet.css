@@ -51,8 +51,11 @@ body {
 	border-bottom: 3px solid white;
 }
 
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 415px) {
 	#menu .smallscreen {
+		display: none !important;
+	}
+	#menuicon {
 		display: none !important;
 	}
 }
@@ -62,11 +65,20 @@ body {
 		display: none !important;
 	}
 
+	.smallscreen {
+		display: none;
+	}
+
+
 	#menuicon {
 		width: 50px;
 		height: auto;
 		display: inline;
-		float: left;
+		margin-left: 44%;
+	}
+
+	#menu:hover .smallscreen {
+		display: block;
 	}
 
 
