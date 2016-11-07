@@ -51,6 +51,26 @@ body {
 	border-bottom: 3px solid white;
 }
 
+@media only screen and (min-width: 414px) {
+	#menu .smallscreen {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 415px) {
+	#menu .bigscreen {
+		display: none !important;
+	}
+
+	#menuicon {
+		width: 50px;
+		height: auto;
+		display: inline;
+		float: left;
+	}
+
+
+}
 
 /*Header*/
 
@@ -92,10 +112,9 @@ body {
 /*
 
 #background {
-    position:relative;
-    width:100%;
-    height:auto;
-
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 */
 
@@ -110,7 +129,7 @@ body {
 	padding: 30px;
 	text-align: justify;
 	box-shadow: 0 0 15px darkgrey;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .infobox h3 {
