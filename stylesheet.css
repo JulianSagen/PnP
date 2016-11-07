@@ -107,11 +107,11 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	top: auto;
+	m
 }
 
-div img {
-	width: 50px;
+div div img {
+	width: 25px;
 	background-color: blue;
 }
 
@@ -148,3 +148,27 @@ div img {
 }
 
 /*Footer*/
+
+footer {
+
+	display: flex;
+}
+
+
+footer ul li {
+	list-style: none;
+}
+
+footer li a {
+	text-decoration: none;
+}
+.footerLeft {
+
+}
+
+.footerCenter {
+
+}
+.footerRight {
+	float: right;
+}
