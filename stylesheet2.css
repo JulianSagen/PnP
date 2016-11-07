@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+/*Menu*/
+
+#menu {
+	width: 100%;
+	position: fixed;
+	background-color: #2d2dd2;
+ 	box-shadow: 0 2px 5px -0px black, inset 0 0 5px #2929a3;
+  z-index: 4;
+ 	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
+
+}
+
+#logo {
+	height: 25px;
+	float: left;
+	padding: 8px 19px;
+}
+
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+
+}
+
+#menu li {
+	float: left;
+}
+
+#menu li a {
+	display: block;
+	text-decoration: none;
+	padding: 13px 23px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+	font-size: 20px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	letter-spacing: 2px;
+	border-bottom: 3px solid transparent;
+	float: left;
+}
+
+#menu li a:hover {
+	border-bottom: 3px solid white;
+}
+
+
+/*Header*/
+
+#background {
+  width: 100%;
+  height:100vh;
+  max-width: 100%;
+  min-width:100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url('images/header.png') no-repeat center center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 100vh;
+}
+
+/*Information*/
+
+.infobox {
+	width: 60vw;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fdfdf7;
+	padding: 30px;
+	text-align: justify;
+	box-shadow: 0 0 15px darkgrey;
+	margin-top: 20px;
+}
+
+.infobox h3 {
+	text-align: center;
+	color: #2d2dd2;
+}
+
+#box1 {
+
+}
+
+#box2 {
+
+}
+
+#box3 {
+
+}
+
+/*Footer*/
