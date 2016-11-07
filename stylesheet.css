@@ -24,16 +24,7 @@ body {
 
 ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	float: left;
 
-}
-
-li {
-	float: left;
-}
 
 #menu li a {
 	display: block;
@@ -46,6 +37,10 @@ li {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	letter-spacing: 2px;
 	border-bottom: 3px solid transparent;
+	float: left;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 #menu li a:hover {
