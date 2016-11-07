@@ -5,6 +5,8 @@ body {
 
 /*Menu*/
 
+
+
 #menu {
 	width: 100%;
 	position: fixed;
@@ -86,14 +88,15 @@ body {
 
 /*Header*/
 
-.banner_holder{
+.background_holder{
     width: 100%;
     height: 750px;
     min-height: 200px;
     position: relative;
 }
 
-.banner_holderImage{
+.background_image{
+
 	width: 100%;
   height:100vh;
   max-width: 100%;
@@ -113,6 +116,13 @@ body {
 	-webkit-align-items: center;
 	align-items: center;
 	padding-top: 2vh;
+
+    height: 100%;
+    position:relative;
+    background: url("../PnP/images/header.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .title {
