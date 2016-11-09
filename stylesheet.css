@@ -9,12 +9,12 @@ body {
 #menu {
 	width: 100%;
 	position: fixed;
-	background-color: #2d2dd2;
+	background-color: #0000BF;
 	opacity: 0.8;
   z-index: 4;
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
-
 }
+
 
 
 #menu ul {
@@ -47,11 +47,15 @@ body {
 	border-bottom: 3px solid white;
 }
 
-nav h4 {
+
+#slogan {
 	float: right;
 	padding: 13px 20px 13px 0;
 	margin: 0;
 	color: #ffffff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
 }
 
 
@@ -62,6 +66,10 @@ nav h4 {
 	}
 	#menuicon {
 		display: none !important;
+	}
+
+	#menu .c-hamburger {
+		display: none;
 	}
 
 }
@@ -79,16 +87,103 @@ nav h4 {
 		margin-left: 10px;
 	}
 
+/*Hamburger*/
 
-	#menuicon {
-		width: 50px;
-		height: auto;
-		display: inline;
-		margin-left: 10px;
+	.c-hamburger {
+	  display: block;
+	  position: relative;
+	  overflow: hidden;
+	  margin: 0;
+	  padding: 0;
+	  width: 50px;
+	  height: 50px;
+	  font-size: 0;
+	  text-indent: -9999px;
+	  appearance: none;
+	  box-shadow: none;
+	  border-radius: none;
+	  border: none;
+	  cursor: pointer;
+	  transition: background 0.3s;
 	}
 
-	#menu:hover .smallscreen {
-		display: block;
+	.c-hamburger:focus {
+	  outline: none;
+	}
+
+	.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  right: 15px;
+  height: 4px;
+  background: white;
+	}
+
+	.c-hamburger span::before,
+	.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  content: "";
+	}
+
+	.c-hamburger span::before {
+  top: -10px;
+	}
+
+	.c-hamburger span::after {
+  bottom: -10px;
+	}
+
+	.c-hamburger--htx {
+	  background-color: #0000BF;
+	}
+
+	.c-hamburger--htx span {
+	  transition: background 0s 0.3s;
+	}
+
+	.c-hamburger--htx span::before,
+	.c-hamburger--htx span::after {
+	  transition-duration: 0.3s, 0.3s;
+	  transition-delay: 0.3s, 0s;
+	}
+
+	.c-hamburger--htx span::before {
+	  transition-property: top, transform;
+	}
+
+	.c-hamburger--htx span::after {
+	  transition-property: bottom, transform;
+	}
+
+	/* active state, i.e. menu open */
+	.c-hamburger--htx.is-active {
+	  background-color: #0000BF;
+	}
+
+	.c-hamburger--htx.is-active span {
+	  background: none;
+	}
+
+	.c-hamburger--htx.is-active span::before {
+	  top: 0;
+	  transform: rotate(45deg);
+	}
+
+	.c-hamburger--htx.is-active span::after {
+	  bottom: 0;
+	  transform: rotate(-45deg);
+	}
+
+	.c-hamburger--htx.is-active span::before,
+	.c-hamburger--htx.is-active span::after {
+	  transition-delay: 0s, 0.3s;
 	}
 
 
@@ -130,28 +225,32 @@ nav h4 {
 .title {
 	margin: 10px;
 	padding: 10px;
-	margin-top: 15%;
+	margin-top: 12%;
 	text-align: center;
-	font-family: Arial;
 	color: #ffffff;
 	text-shadow: 2px 2px 5px #000000;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .title h1 {
- font-size: 50px;
+ font-size: 60px;
+ letter-spacing: 2px;
 }
 
-.title h4 {
+.title h2 {
 	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 #titleIcons div {
 	display: inline-block;
+	margin-top: 20px;
 }
 
 #titleIcons img {
 	width: 30px;
-	background-color: blue;
+	background-color: #0000BF;
 }
 
 
@@ -160,25 +259,30 @@ nav h4 {
 div h3 {
 	margin: 0;
 	padding: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .infobox {
-	width: 60vw;
-	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #fdfdf7;
-	padding: 30px;
-	box-shadow: 0 0 15px darkgrey;
-	margin-top: 30px;*
-	max-width:
+	background-color: transparent;;
+	padding: 30px 30px 30px 30px;
+	max-width: 750px;
+	margin-top: 0.5em;
 }
 
 .infobox h3 {
 	text-align: center;
-	color: #2d2dd2;
+	color: #0000BF;
 	padding-bottom: 10px;
 	font-size: 25px;
+}
+.infobox p {
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.darkerBackground {
+	background-color: lightgrey;
 }
 
 #box1 {
@@ -200,20 +304,27 @@ div h3 {
 /*Footer*/
 
 .footerBox {
-	max-width: 60vw;
-	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: transparent;
-	padding: 30px;
-	margin-top: 30px;
+	background-color: transparent;;
+	padding: 30px 30px 30px 30px;
+	max-width: 750px;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
 	text-decoration: none;
 	list-style: none;
 	text-align: left;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.socialIcons a {
+		text-decoration: none;
 }
 
 .socialIcons img {
-	width: 20px;
+	width: 30px;
 	display: inline;
-	padding-right: 10px;
+	padding: 0;
+	margin-right: 15px;
+
 }

@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<title>Loo</title>
+
+	<title>The Loo - find a toilet near you!</title>
 
 </head>
 <body>
@@ -13,25 +14,38 @@
 
 		<nav id="menu">
 
-			<ul class="bigscreen">
+			<div class="bigscreen">
+
+				<ul>
+					<li> <a onclick="document.getElementById('id1').style.borderBottom = '3px solid white';" id ="id1" href="#box1tp"> Knapp1 </a> </li>
+					<li> <a onclick="document.getElementById('id2').style.borderBottom = '3px solid white';" id ="id2" href="#box2tp"> Knapp2 </a> </li>
+					<li> <a onclick="document.getElementById('id3').style.borderBottom = '3px solid white';" id ="id3" href="#box3tp"> Knapp3 </a> </li>
+				</ul>
+
+			</div>
+
 
 				<li> <a id ="id1" href="#box1"> Knapp1 </a> </li>
 				<li> <a id ="id2" href="#box2"> Knapp2 </a> </li>
 				<li> <a id ="id3" href="#box3"> Knapp3 </a> </li>
 
-			</ul>
-			<h4>Loo, find a toilet near you!</h4>
+			<p id="slogan">Find a toilet near you!</p>
+
+			<button class="c-hamburger c-hamburger--htx">
+  			<span>toggle menu</span>
+			</button>
 
 
-				<img id="menuicon" src="images/menuhamburgerwhite.png"> <br>
 
+			<div class="smallscreen">
+				<ul>
 
+					<li><a href="#box1tp"> Knapp1 </a></li><br>
+					<li><a href="#box2tp"> Knapp2 </a></li><br>
+					<li><a href="#box3tp"> Knapp3 </a></li><br>
 
-			<ul class="smallscreen">
-				<li> <a href="#box1tp"> Knapp1 </a> </li> <br>
-				<li> <a href="#box2tp"> Knapp2 </a> </li> <br>
-				<li> <a href="#box3tp"> Knapp3 </a> </li> <br>
-			</ul>
+				</ul>
+			</div>
 
 
 		</nav>
@@ -44,47 +58,51 @@
         <div class="background_image">
 					<div class="title">
 						<h1>LOO</h1>
-						<h4>The app that let's you rent or lease a bathroom.</h4>
-						<h4>Loo, find a toilet near you!</h4>
+						<h2>The app that let's you rent or lease a bathroom.</h2>
 						<div id="titleIcons">
 							<div>
-								<img src="images/icons/unisex.png"/>
-								<img src="images/icons/male.png"/>
-								<img src="images/icons/female.png"/>
-								<img src="images/icons/wheelchair.png"/>
-								<img src="images/icons/diper.png"/>
+								<img src="images/icons/unisex.png" alt="unisex icon"/>
+								<img src="images/icons/wheelchair.png" alt="wheelchair icon"/>
+								<img src="images/icons/diper.png" alt="baby changing table icon"/>
 							</div>
 							<div>
-								<img src="images/icons/private.png"/>
-								<img src="images/icons/work.png"/>
-								<img src="images/icons/eat.png"/>
-								<img src="images/icons/card.png"/>
-								<img src="images/icons/cash.png"/>
+								<img src="images/icons/private.png" alt="house icon for private toilets"/>
+								<img src="images/icons/work.png" alt="suitcase icon for toilets at work"/>
+								<img src="images/icons/eat.png" alt="fork and knife icon for toilets at restaurants"/>
+								<img src="images/icons/card.png" alt="credit card icon for paying with card"/>
+								<img src="images/icons/cash.png" alt="coins icon for paying with coins"/>
 							</div>
 						</div>
 					</div>
 				</div>
 
 	<!--Information-->
-
+	<div class="darkerBackground">
         <div class="tp" id="box1tp"></div>
 		<div class="infobox" id="box1">
-
 			<h3> BOX 1 </h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			</div>
 		</div>
 
-        <div class="tp" id="box2tp"></div>
+	<div>
+				<div class="tp" id="box2tp"></div>
 		<div class="infobox" id="box2">
 			<h3> BOX 2 </h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
 		</div>
+	</div>
 
+	<div class="darkerBackground">
         <div class="tp" id="box3tp"></div>
 		<div class="infobox" id="box3">
 			<h3> BOX 3 </h3>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
 		</div>
+	</div>
 
 	<!--Footer-->
 	<footer class="footerBox">
@@ -96,26 +114,51 @@
 		</div>
 
 		<div class="socialIcons">
-			<a href="https://www.facebook.com/TheLooApp/">
-				<img src="../PnP/images/icons/facebook.png"/>
+			<a href="https://www.facebook.com/TheLooApp/" title="Facebook" alt="Link to Facebook website">
+				<img src="../PnP/images/icons/facebook.png" alt="Fac"/>
 			</a>
-			<a href="https://twitter.com/TheLooApp">
-				<img src="../PnP/images/icons/twitter.png"/>
+			<a href="https://twitter.com/TheLooApp" title="Twitter" alt="Link to Twitter website">
+				<img src="../PnP/images/icons/twitter.png"/ alt="Twitter logo">
 			</a>
-			<a href="https://www.instagram.com/thelooapp/">
-				<img src="../PnP/images/icons/instagram.png"/>
+			<a href="https://www.instagram.com/thelooapp/" title="Instagram"  alt="Link to Instagram website">
+				<img src="../PnP/images/icons/instagram.png" alt="Instagram logo"/>
 			</a>
 		</div>
 
 		<div>
 			<p>
-				© 2016 LooApp Inc
+				&copy; 2016 LooApp Inc
 			</p>
 		</div>
 
 	</footer>
 
     </div>
+
 	<script type="text/javascript" src="script.js"></script>
+
+<script>
+(function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+
+</script>
+
 </body>
 </html>
