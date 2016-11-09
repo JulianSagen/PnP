@@ -15,9 +15,7 @@ body {
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
 }
 
-#menu img {
-	image-resolution: snap;
-}
+
 
 #menu ul {
 	list-style-type: none;
@@ -130,7 +128,7 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   content: "";
 	}
 
@@ -143,7 +141,7 @@ body {
 	}
 
 	.c-hamburger--htx {
-	  background-color: #2d2dd2;
+	  background-color: #0000BF;
 	}
 
 	.c-hamburger--htx span {
@@ -166,7 +164,7 @@ body {
 
 	/* active state, i.e. menu open */
 	.c-hamburger--htx.is-active {
-	  background-color: #2d2dd2;
+	  background-color: #0000BF;
 	}
 
 	.c-hamburger--htx.is-active span {
@@ -269,11 +267,8 @@ div h3 {
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #fdfdf7;
-	padding: 30px;
-	box-shadow: 0 0 15px darkgrey;
-	margin-top: 30px;*
-	max-width:
+	background-color: transparent;;
+	padding: 30px 0 30px 0;
 }
 
 .infobox h3 {
@@ -281,6 +276,13 @@ div h3 {
 	color: #0000BF;
 	padding-bottom: 10px;
 	font-size: 25px;
+}
+.infobox p {
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.darkerBackground {
+	background-color: lightgrey;
 }
 
 #box1 {
