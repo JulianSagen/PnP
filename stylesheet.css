@@ -47,11 +47,14 @@ body {
 	border-bottom: 3px solid white;
 }
 
-nav h4 {
+#slogan {
 	float: right;
 	padding: 13px 20px 13px 0;
 	margin: 0;
 	color: #ffffff;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px black;
 }
 
 
@@ -130,7 +133,7 @@ nav h4 {
 .title {
 	margin: 10px;
 	padding: 10px;
-	margin-top: 15%;
+	margin-top: 12%;
 	text-align: center;
 	font-family: Arial;
 	color: #ffffff;
@@ -147,6 +150,7 @@ nav h4 {
 
 #titleIcons div {
 	display: inline-block;
+	margin-top: 20px;
 }
 
 #titleIcons img {
