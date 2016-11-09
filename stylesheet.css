@@ -47,6 +47,13 @@ body {
 	border-bottom: 3px solid white;
 }
 
+nav h4 {
+	float: right;
+	padding: 13px 20px 13px 0;
+	margin: 0;
+	color: #ffffff;
+}
+
 
 
 @media only screen and (min-width: 415px) {
@@ -184,6 +191,10 @@ div h3 {
 
 #box3 {
 
+}
+
+.tp {
+    height: 1.5em;
 }
 
 /*Footer*/
