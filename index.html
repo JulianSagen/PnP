@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<title>The Loo - Find a toilet near you!</title>
+
+	<title>The Loo - find a toilet near you!</title>
 
 </head>
 <body>
@@ -27,8 +28,9 @@
 			<p id="slogan">Find a toilet near you!</p>
 
 
-			<img id="menuicon" src="images/menuhamburgerwhite.png" alt="menyicon">
-			<br>
+			<button class="c-hamburger c-hamburger--htx">
+  			<span>toggle menu</span>
+			</button>
 
 
 
@@ -103,7 +105,7 @@
 
 		<div class="socialIcons">
 			<a href="https://www.facebook.com/TheLooApp/" title="Facebook" alt="Link to Facebook website">
-				<img src="../PnP/images/icons/facebook.png" alt="Facebook logo"/>
+				<img src="../PnP/images/icons/facebook.png" alt="Fac"/>
 			</a>
 			<a href="https://twitter.com/TheLooApp" title="Twitter" alt="Link to Twitter website">
 				<img src="../PnP/images/icons/twitter.png"/ alt="Twitter logo">
@@ -122,6 +124,27 @@
 	</footer>
 
     </div>
+<script>
+(function() {
 
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+
+</script>
 </body>
 </html>
