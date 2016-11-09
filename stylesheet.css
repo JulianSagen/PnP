@@ -17,7 +17,7 @@ body {
 }
 
 
-#menu div {
+#menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,11 @@ body {
 	float: left;
 }
 
-#menu div a {
+#meny li {
+	float: left;
+}
+
+#menu li a {
 	display: block;
 	text-decoration: none;
 	padding: 13px 23px;
@@ -39,13 +43,10 @@ body {
 	float: left;
 }
 
-#menu div a:hover {
+#menu li a:hover {
 	border-bottom: 3px solid white;
 }
 
-#menu div a:active {
-	border-bottom: 3px solid white;
-}
 
 #slogan {
 	float: right;
