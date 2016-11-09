@@ -229,7 +229,9 @@ div h3 {
 }
 
 .socialIcons img {
-	width: 20px;
+	width: 30px;
 	display: inline;
-	padding-right: 10px;
+	padding: 0;
+	margin-right: 15px;
+
 }
