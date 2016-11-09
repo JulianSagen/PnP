@@ -16,12 +16,6 @@ body {
 
 }
 
-#logo {
-	height: 25px;
-	float: left;
-	padding: 8px 19px;
-}
-
 
 #menu ul {
 	list-style-type: none;
@@ -52,6 +46,7 @@ body {
 #menu li a:hover {
 	border-bottom: 3px solid white;
 }
+
 
 
 @media only screen and (min-width: 415px) {
