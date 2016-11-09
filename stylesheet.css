@@ -17,7 +17,7 @@ body {
 }
 
 
-#menu ul {
+#menu div {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -25,11 +25,7 @@ body {
 	float: left;
 }
 
-#menu li {
-	float: left;
-}
-
-#menu li a {
+#menu div a {
 	display: block;
 	text-decoration: none;
 	padding: 13px 23px;
@@ -43,7 +39,11 @@ body {
 	float: left;
 }
 
-#menu li a:hover {
+#menu div a:hover {
+	border-bottom: 3px solid white;
+}
+
+#menu div a:active {
 	border-bottom: 3px solid white;
 }
 
@@ -87,7 +87,7 @@ body {
 		width: 50px;
 		height: auto;
 		display: inline;
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 
 	#menu:hover .smallscreen {
@@ -144,8 +144,9 @@ body {
  font-size: 50px;
 }
 
-.title h4 {
-	font-size: 20px;
+.title h2 {
+	font-size: 30px;
+	font-weight: lighter;
 }
 
 #titleIcons div {
@@ -214,6 +215,10 @@ div h3 {
 	text-decoration: none;
 	list-style: none;
 	text-align: left;
+}
+
+.socialIcons a {
+		text-decoration: none;
 }
 
 .socialIcons img {
