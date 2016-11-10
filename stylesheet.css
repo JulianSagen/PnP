@@ -64,12 +64,9 @@ body {
 	#menu .smallscreen {
 		display: none !important;
 	}
-	#menuicon {
-		display: none !important;
-	}
 
 	#menu .c-hamburger {
-		display: none;
+		display: none !important;
 	}
 
 }
@@ -254,13 +251,9 @@ body {
 
 /*Information*/
 
-div h3 {
-	margin: 0;
-	padding: 0;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
 
 .infobox {
+<<<<<<< Updated upstream
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 2.5em;
@@ -268,6 +261,14 @@ div h3 {
 	padding: 30px 30px 30px 30px;
 	max-width: 750px;
 	margin-top: 0.5em;
+=======
+	max-width: 100%;
+	height: auto;
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-top: 40px;
+
+>>>>>>> Stashed changes
 }
 
 .infobox h3 {
@@ -275,6 +276,10 @@ div h3 {
 	color: #0000BF;
 	padding-bottom: 10px;
 	font-size: 25px;
+	margin-bottom: 8px;
+	padding: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
 }
 .infobox p {
 	font-family: "Arial", Helvetica, sans-serif;
@@ -293,6 +298,7 @@ div h3 {
 }
 
 #box3 {
+
 
 }
 
