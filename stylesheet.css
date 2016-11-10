@@ -60,7 +60,7 @@ body {
 
 
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 610px) {
 	#menu .smallscreen {
 		display: none !important;
 	}
@@ -71,7 +71,7 @@ body {
 
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 610px) {
 	#menu .bigscreen {
 		display: none !important;
 	}
