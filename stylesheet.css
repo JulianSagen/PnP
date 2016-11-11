@@ -9,8 +9,8 @@ body {
 #menu {
 	width: 100%;
 	position: fixed;
-	background-color: #0000BF;
-	opacity: 0.8;
+	background-color: #0E0E52;
+	opacity: 1;
     z-index: 4;
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
 }
