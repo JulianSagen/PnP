@@ -236,13 +236,10 @@ body {
 	text-align: center;
 	color: #ffffff;
 	text-shadow:
-	#000 0px 0px 2px,
-	#000 0px 0px 2px,
-	#000 0px 0px 2px,
-  #000 0px 0px 2px,
-	#000 0px 0px 2px,
-	#000 0px 0px 2px;
-	-webkit-font-smoothing: antialiased;
+	-2px -2px 5px #000,
+	2px -2px 5px #000,
+	-2px  2px 5px #000,
+	2px  2px 5px #000;
 	text-transform: uppercase;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -256,6 +253,11 @@ body {
 	font-size: 30px;
 	font-weight: lighter;
 	letter-spacing: 1px;
+	text-shadow:
+	-2px -2px 5px #000,
+	2px -2px 5px #000,
+	-2px  2px 5px #000,
+	2px  2px 5px #000;
 }
 
 
@@ -304,7 +306,7 @@ body {
 }
 
 .darkerBackground {
-	background-color: lightgrey;
+	background-color: #e8e8e8;
 	padding-bottom: 2.5em;
 }
 
