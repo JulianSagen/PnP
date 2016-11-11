@@ -27,7 +27,7 @@
 			<p id="slogan">Find a toilet near you!</p>
 
 			<!--Dropdown Menu-->
-			<button onclick="myFunction()" class="c-hamburger c-hamburger--htx">
+			<button onclick="myFunction()" id="hamburgerknapp" class="c-hamburger c-hamburger--htx">
   			<span>toggle menu</span>
 			</button>
 			<div id="myDropdown" class="smallscreen">
@@ -154,6 +154,8 @@
     toggleHandler(toggle);
   };
 
+
+
   function toggleHandler(toggle) {
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
@@ -164,10 +166,28 @@
 })();
 
 
+/*Dropdown menu*/
+
 	function myFunction() {
 		document.getElementById("myDropdown").classList.toggle("show")
 		;
 	}
+
+/*Close dropdown when clicking outside*/
+
+	window.onclick = function(event) {
+  if (!event.target.matches('#hamburgerknapp')) {
+
+    var dropdowns = document.getElementsById("myDropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
 </script>
 

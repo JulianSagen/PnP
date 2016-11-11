@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	position: fixed;
 	background-color: #1351a3;
-	opacity: 0.85;
+	opacity: 0.95;
   z-index: 4;
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
 }
@@ -79,6 +79,7 @@ body {
 
 	#menu .smallscreen li{
 		margin-left: 10px;
+		opacity: 1;
 	}
 
 /*Hamburger menu*/
