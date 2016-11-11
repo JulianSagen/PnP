@@ -27,9 +27,12 @@
 			<p id="slogan">Find a toilet near you</p>
 
 			<!--Dropdown Menu-->
+
 			<button onclick="myFunction()" id="hamburgerknapp" class="c-hamburger c-hamburger--htx">
   			<span>toggle menu</span>
 			</button>
+
+
 			<div id="myDropdown" class="smallscreen">
 				<ul>
 
@@ -142,54 +145,6 @@
 
 	<script type="text/javascript" src="script.js"></script>
 
-<script>
-(function() {
-
-  "use strict";
-
-  var toggles = document.querySelectorAll(".c-hamburger");
-
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  };
-
-
-
-  function toggleHandler(toggle) {
-    toggle.addEventListener( "click", function(e) {
-      e.preventDefault();
-      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-    });
-  }
-
-})();
-
-
-/*Dropdown menu*/
-
-	function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show")
-		;
-	}
-
-/*Close dropdown when clicking outside*/
-
-	window.onclick = function(event) {
-  if (!event.target.matches("#hamburgerknapp")) {
-
-    var dropdowns = document.getElementsByClassName("smallscreen");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-</script>
 
 </body>
 </html>

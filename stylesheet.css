@@ -57,7 +57,7 @@ body {
 
 /*Sizes (from desktop to mobile)*/
 
-@media only screen and (min-width: 610px) {
+@media only screen and (min-width: 624px) {
 	#menu .smallscreen {
 		display: none !important;
 	}
@@ -68,7 +68,7 @@ body {
 
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 624px) {
 	#menu .bigscreen {
 		display: none !important;
 	}
@@ -99,7 +99,6 @@ body {
 	  border-radius: none;
 	  border: none;
 	  cursor: pointer;
-	  transition: background 0.3s;
 	}
 
 	.c-hamburger:focus {
@@ -140,7 +139,7 @@ body {
 	}
 
 	.c-hamburger--htx {
-	  background-color: #1351a3;
+	  background: none;
 	}
 
 	.c-hamburger--htx span {
@@ -163,7 +162,7 @@ body {
 
 	/* active state, i.e. menu open */
 	.c-hamburger--htx.is-active {
-	  background-color: #1351a3;
+	  background: none;
 	}
 
 	.c-hamburger--htx.is-active span {
