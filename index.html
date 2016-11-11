@@ -176,9 +176,9 @@
 /*Close dropdown when clicking outside*/
 
 	window.onclick = function(event) {
-  if (!event.target.matches('#hamburgerknapp')) {
+  if (!event.target.matches("#hamburgerknapp")) {
 
-    var dropdowns = document.getElementsById("myDropdown");
+    var dropdowns = document.getElementsByClassName("smallscreen");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
