@@ -236,10 +236,10 @@ body {
 	text-align: center;
 	color: #ffffff;
 	text-shadow:
-	-2px -2px 5px #000,
-	2px -2px 5px #000,
-	-2px  2px 5px #000,
-	2px  2px 5px #000;
+	-2px -2px 5px #212121,
+	2px -2px 5px #212121,
+	-2px  2px 5px #212121,
+	2px  2px 5px #212121;
 	text-transform: uppercase;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -254,10 +254,10 @@ body {
 	font-weight: lighter;
 	letter-spacing: 1px;
 	text-shadow:
-	-2px -2px 5px #000,
-	2px -2px 5px #000,
-	-2px  2px 5px #000,
-	2px  2px 5px #000;
+	-2px -2px 5px #212121,
+	2px -2px 5px #212121,
+	-2px  2px 5px #212121,
+	2px  2px 5px #212121;
 }
 
 
@@ -267,11 +267,13 @@ body {
 	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 50px;
+
 }
 
 #titleIcons img {
 	width: 30px;
 	background-color: #1351a3;
+	box-shadow: 1px 1px 5px #383838;
 }
 
 
