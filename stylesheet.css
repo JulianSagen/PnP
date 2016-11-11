@@ -8,9 +8,9 @@ body {
 #menu {
 	width: 100%;
 	position: fixed;
-	background-color: #0E0E52;
-	opacity: 1;
-    z-index: 4;
+	background-color: #1351a3;
+	opacity: 0.85;
+  z-index: 4;
  	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
 }
 
@@ -52,6 +52,8 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 20px;
 	text-shadow: 1px 1px 5px black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 /*Sizes (from desktop to mobile)*/
@@ -112,6 +114,7 @@ body {
   right: 15px;
   height: 4px;
   background: white;
+	border-radius: 10px;
 	}
 
 	.c-hamburger span::before,
@@ -123,6 +126,7 @@ body {
   height: 4px;
   background-color: #ffffff;
   content: "";
+	border-radius: 10px;
 	}
 
 	.c-hamburger span::before {
@@ -134,17 +138,17 @@ body {
 	}
 
 	.c-hamburger--htx {
-	  background-color: #0000BF;
+	  background-color: #1351a3;
 	}
 
 	.c-hamburger--htx span {
-	  transition: background 0s 0.3s;
+	  transition: background 0s 0.2s;
 	}
 
 	.c-hamburger--htx span::before,
 	.c-hamburger--htx span::after {
-	  transition-duration: 0.3s, 0.3s;
-	  transition-delay: 0.3s, 0s;
+	  transition-duration: 0.2s, 0.2s;
+	  transition-delay: 0.2s, 0s;
 	}
 
 	.c-hamburger--htx span::before {
@@ -157,7 +161,7 @@ body {
 
 	/* active state, i.e. menu open */
 	.c-hamburger--htx.is-active {
-	  background-color: #0000BF;
+	  background-color: #1351a3;
 	}
 
 	.c-hamburger--htx.is-active span {
@@ -176,7 +180,12 @@ body {
 
 	.c-hamburger--htx.is-active span::before,
 	.c-hamburger--htx.is-active span::after {
-	  transition-delay: 0s, 0.3s;
+	  transition-delay: 0s, 0.2s;
+
+	}
+
+	.show {
+		display: block;
 	}
 
 }
@@ -246,7 +255,7 @@ body {
 
 #titleIcons img {
 	width: 30px;
-	background-color: #0000BF;
+	background-color: #1351a3;
 }
 
 

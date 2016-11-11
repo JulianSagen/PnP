@@ -26,13 +26,11 @@
 
 			<p id="slogan">Find a toilet near you!</p>
 
-			<button class="c-hamburger c-hamburger--htx">
+			<!--Dropdown Menu-->
+			<button onclick="myFunction()" class="c-hamburger c-hamburger--htx">
   			<span>toggle menu</span>
 			</button>
-
-
-
-			<div class="smallscreen">
+			<div id="myDropdown" class="smallscreen">
 				<ul>
 
 					<li><a href="#box1tp"> Knapp1 </a></li><br>
@@ -164,6 +162,12 @@
   }
 
 })();
+
+
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show")
+		;
+	}
 
 </script>
 
