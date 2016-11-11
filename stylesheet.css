@@ -214,7 +214,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: url("images/header5.png")no-repeat;
+  background: url("images/headerblur.png")no-repeat;
   background-size: cover;
   background-position: center;
 	margin-top: 0;
@@ -236,7 +236,15 @@ body {
 	margin-top: 12%;
 	text-align: center;
 	color: #ffffff;
-	text-shadow: 2px 2px 5px #000000;
+	text-shadow:
+	#000 0px 0px 2px,
+	#000 0px 0px 2px,
+	#000 0px 0px 2px,
+  #000 0px 0px 2px,
+	#000 0px 0px 2px,
+	#000 0px 0px 2px;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
