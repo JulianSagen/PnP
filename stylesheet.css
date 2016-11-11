@@ -253,7 +253,6 @@ body {
 
 
 .infobox {
-<<<<<<< Updated upstream
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 2.5em;
@@ -261,14 +260,6 @@ body {
 	padding: 30px 30px 30px 30px;
 	max-width: 750px;
 	margin-top: 0.5em;
-=======
-	max-width: 100%;
-	height: auto;
-	padding-right: 20%;
-	padding-left: 20%;
-	margin-top: 40px;
-
->>>>>>> Stashed changes
 }
 
 .infobox h3 {
