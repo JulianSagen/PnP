@@ -1,3 +1,5 @@
+/*on click menu*/
+
     id1.addEventListener('click', function() {
         document.getElementById('id2').style.borderBottom = '3px solid transparent';
         document.getElementById('id3').style.borderBottom = '3px solid transparent';
@@ -16,6 +18,7 @@
 
 
 
+/*hamburger menu to X */
 
     (function() {
 
@@ -41,14 +44,14 @@
     })();
 
 
-    /*Dropdown menu*/
+/*Dropdown menu*/
 
     	function myFunction() {
     		document.getElementById("myDropdown").classList.toggle("show")
     		;
     	}
 
-    /*Close dropdown when clicking outside*/
+/*Close dropdown when clicking outside*/
 
     	window.onclick = function(event) {
       if (!event.target.matches("#hamburgerknapp")) {
