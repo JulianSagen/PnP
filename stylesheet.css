@@ -245,7 +245,7 @@ body {
 }
 
 .title h1 {
- font-size: 120px;
+ font-size: 80px;
  letter-spacing: 2px;
  display: inline-block;
 
@@ -267,17 +267,16 @@ body {
 
 #maskott {
 	display: inline-block;
-	height: 120px;
-	padding-top: 50px;
-
-	image-rendering: pixelated;
+	height: 45px;
+	padding: 5px;
+	margin: 0 0 0 20px;
+	float: right;
 }
 
 #titleIcons div {
 	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 50px;
-
 }
 
 #titleIcons img {
