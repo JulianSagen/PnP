@@ -44,16 +44,6 @@ body {
 	border-bottom: 3px solid white;
 }
 
-#slogan {
-	float: right;
-	padding: 13px 20px 13px 0;
-	margin: 0;
-	color: #ffffff;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 20px;
-	text-shadow: 1px 1px 5px black;
-	text-transform: uppercase;
-}
 
 /*Sizes (from desktop to mobile)*/
 
@@ -195,6 +185,14 @@ body {
 
 }
 
+#maskott {
+	display: inline-block;
+	height: 42px;
+	padding: 5px;
+	margin: 0 0 0 20px;
+	float: right;
+}
+
 /*Header*/
 
 .background_holder {
@@ -256,22 +254,10 @@ body {
 	font-weight: lighter;
 	letter-spacing: 1px;
 	text-shadow:
-	-2px -2px 5px #212121,
-	2px -2px 5px #212121,
-	-2px  2px 5px #212121,
-	2px  2px 5px #212121;
 }
 
 
 /*Title images*/
-
-#maskott {
-	display: inline-block;
-	height: 45px;
-	padding: 5px;
-	margin: 0 0 0 20px;
-	float: right;
-}
 
 #titleIcons div {
 	display: inline-block;
