@@ -7,13 +7,14 @@
 		<title>The Loo Application</title>
 	</head>
 
-	<body>
+	<body id="body">
 		<header>
 			<!--Menu-->
 				<nav class="header">
 					<a href"#"><img id="maskott" src="images/Loo.svg" alt="Loo the toilet logo"/></a><!--.Kan sette tekst logo om ønskelig med class="logo"-->
 					<input class="menu-btn" type="checkbox" id="menu-btn"/>
 					<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
 					<ul class="menu">
 						<li class="one"><a href="#problem" >Social problem</a></li>
 						<li class="two"><a href="#solution">Our solution</a></li>
@@ -44,7 +45,40 @@
 
 			</header>
 
-			<main class="main">
+		<!-- javaScript for changing page font size -->
+
+		<select onchange="myFunction(this);" size="1">
+			<option>Choose text-size</option>
+		  <option>14%</option>
+		  <option>18%</option>
+		  <option>22%</option>
+			<option>26px</option>
+			<option>30px</option>
+		</select>
+
+		<div>
+			<input name="reSize" type="button" value="+" onclick="resizeText(1)" style="font-size:20px;"/>
+			<input name="reSize2" type="button" value="-" onclick="resizeText(-1)" style="font-size:28px;"/>
+		</div>
+
+	<script>
+	function resizeText(multiplier) {
+	var elem = document.getElementById("body");
+
+	var currentSize = elem.style.fontSize || 1;
+	elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
+}
+
+		function myFunction(selectTag) {
+		    var listValue = selectTag.options[selectTag.selectedIndex].text;
+		    document.getElementById("body").style.fontSize = listValue;
+				object.style.fontSize="initial";
+				}
+
+
+		</script>
+
+
 		<!--Information boxes-->
 		<main>
 
