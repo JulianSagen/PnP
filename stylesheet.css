@@ -1,199 +1,156 @@
 body {
 	margin: 0;
-	background-color: #f5f5f5;
-}
-
-/*Menu*/
-
-#menu {
-	width: 100%;
-	position: fixed;
-	background-color: #1351a3;
-	opacity: 0.95;
-  z-index: 4;
- 	box-shadow: 0 1px 10px black, inset 0 0 5px #2929a3;
-}
-
-#menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	float: left;
-}
-
-#menu li {
-	float: left;
-}
-
-#menu li a {
-	display: block;
-	text-decoration: none;
-	padding: 13px 23px;
-	text-align: center;
-	color: white;
-	text-shadow: 1px 1px 5px black;
-	font-size: 20px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	letter-spacing: 2px;
-	border-bottom: 3px solid transparent;
-	float: left;
+	background-color: #ffffff;
 }
 
-#menu li a:hover {
-	border-bottom: 3px solid white;
+a {
+  color: hotpink;
 }
 
 
-/*Sizes (from desktop to mobile)*/
+/* header */
 
-@media only screen and (min-width: 624px) {
-	#menu .smallscreen {
-		display: none !important;
-	}
-
-	#menu .c-hamburger {
-		display: none !important;
-	}
-
-}
-
-@media only screen and (max-width: 624px) {
-	#menu .bigscreen {
-		display: none !important;
-	}
-
-	.smallscreen {
-		display: none;
-	}
-
-	#menu .smallscreen li{
-		margin-left: 10px;
-		opacity: 1;
-	}
-
-/*Hamburger menu*/
-
-	.c-hamburger {
-	  display: block;
-	  position: relative;
-	  overflow: hidden;
-	  margin: 0;
-	  padding: 0;
-	  width: 50px;
-	  height: 50px;
-	  font-size: 0;
-	  text-indent: -9999px;
-	  appearance: none;
-	  box-shadow: none;
-	  border-radius: none;
-	  border: none;
-	  cursor: pointer;
-	}
-
-	.c-hamburger:focus {
-	  outline: none;
-	}
-
-	.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 15px;
-  right: 15px;
-  height: 4px;
-  background: white;
-	border-radius: 10px;
-	box-shadow: 0 1px 5px darkblue;
-	}
-
-	.c-hamburger span::before,
-	.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
   width: 100%;
-  height: 4px;
-  background-color: #ffffff;
-  content: "";
-	border-radius: 10px;
-	box-shadow: 0 1px 5px darkblue;
-	}
-
-	.c-hamburger span::before {
-  top: -10px;
-	}
-
-	.c-hamburger span::after {
-  bottom: -10px;
-	}
-
-	.c-hamburger--htx {
-	  background: none;
-	}
-
-	.c-hamburger--htx span {
-	  transition: background 0s 0.2s;
-	}
-
-	.c-hamburger--htx span::before,
-	.c-hamburger--htx span::after {
-	  transition-duration: 0.2s, 0.2s;
-	  transition-delay: 0.2s, 0s;
-	}
-
-	.c-hamburger--htx span::before {
-	  transition-property: top, transform;
-	}
-
-	.c-hamburger--htx span::after {
-	  transition-property: bottom, transform;
-	}
-
-	/* active state, i.e. menu open */
-	.c-hamburger--htx.is-active {
-	  background: none;
-	}
-
-	.c-hamburger--htx.is-active span {
-	  background: none;
-		box-shadow: none;
-	}
-
-	.c-hamburger--htx.is-active span::before {
-	  top: 0;
-	  transform: rotate(45deg);
-		box-shadow:
-		0px 0px 20px darkblue;
-	}
-
-	.c-hamburger--htx.is-active span::after {
-	  bottom: 0;
-	  transform: rotate(-45deg);
-		box-shadow: none;
-	}
-
-	.c-hamburger--htx.is-active span::before,
-	.c-hamburger--htx.is-active span::after {
-	  transition-delay: 0s, 0.2s;
-
-	}
-
-	.show {
-		display: block;
-	}
-
+  z-index: 3;
+	opacity: 0.9;
 }
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/*menu*/
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*menu icon*/
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/*menu button*/
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*desktop version*/
+
+@media (min-width: 52em) {
+  .header li {
+    float: left;
+		display: inline-block;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
 
 #maskott {
 	display: inline-block;
-	height: 42px;
-	padding: 5px;
-	margin: 0 0 0 20px;
-	float: right;
+	height: 40px;
+	margin: 0px 0 0 0px;
+	padding: 8px 20px;
+	float: left;
 }
 
-/*Header*/
+/*Cover Photo*/
 
 .background_holder {
     width: 100%;
@@ -246,7 +203,6 @@ body {
  font-size: 80px;
  letter-spacing: 2px;
  display: inline-block;
-
 }
 
 .title h2 {
@@ -272,14 +228,14 @@ body {
 }
 
 
-/*Information boxes*/
+/*Main*/
 
 .infobox {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: transparent;
 	padding: 30px 30px 30px 30px;
-	max-width: 750px;
+	max-width: 1400px;
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
 	text-decoration: none;
@@ -288,68 +244,32 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+/*Headings and text*/
 .infobox h3 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	color: #0000BF;
-	text-align: center;
-	font-size: 30px;
-	margin: 0;
-	padding: 0;
-	padding-bottom: 10px;
-	font-size: 50px;
+	margin: 30px 0 40px 0;
+	padding: 40px 0 10px 0;
+	font-size: 35px;
 	font-weight: bold;
-	margin-bottom: 40px;
-	margin-top: 30px;
+	text-align: center;
 }
 
 .infobox h4 {
 	font-size: 25px;
 	font-weight: bold;
-	margin-bottom: 5px;
-	margin-top: 15px;
+	margin: 15px 0 5px 0;
 }
 
 .infobox h5 {
 	font-size: 20px;
 	font-weight: bold;
-	margin-bottom: 5px;
-	margin-top: 10px;
+	margin: 10px 0 5px 0;
 }
 
 .infobox p {
 	font-family: "Arial", Helvetica, sans-serif;
 	font-size: 16px;
-}
-
-.left {
-	float: left;
-	display: inline-block;
-}
-
-.right {
-	float: right;
-	display: inline-block;
-}
-
-
-/*Individual boxes*/
-
-#box1 {
-
-}
-
-
-#box2 {
-
-}
-
-#box3 {
-
-
-}
-
-.tp {
-    height: 2.5em;
 }
 
 
@@ -360,7 +280,7 @@ body {
 	margin-right: auto;
 	background-color: transparent;
 	padding: 30px 30px 30px 30px;
-	max-width: 750px;
+	max-width: 1400px;
 	margin-top: 2.5em;
 	margin-bottom: 5em;
 	text-decoration: none;
@@ -369,12 +289,16 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+.footerBox a {
+	text-decoration: none;
+}
+
 /*Footer icons*/
 
 .socialIcons a {
-		text-decoration: none;
-		display: inline-block;
-		margin-right: 15px
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 15px
 }
 
 .socialIcons img {
