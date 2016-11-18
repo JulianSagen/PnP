@@ -47,33 +47,21 @@
 
 		<!-- javaScript for changing page font size -->
 
-		<select onchange="myFunction(this);" size="1">
-			<option>Choose text-size</option>
-		  <option>14%</option>
-		  <option>18%</option>
-		  <option>22%</option>
-			<option>26px</option>
-			<option>30px</option>
-		</select>
 
 		<div>
-			<input name="reSize" type="button" value="+" onclick="resizeText(1)" style="font-size:20px;"/>
-			<input name="reSize2" type="button" value="-" onclick="resizeText(-1)" style="font-size:28px;"/>
+			<input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" class="resizeText" />
+			<input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" class="resizeText" />
+
 		</div>
 
 	<script>
-	function resizeText(multiplier) {
-	var elem = document.getElementById("body");
 
-	var currentSize = elem.style.fontSize || 1;
-	elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
+			function resizeText(multiplier) {
+	    var element = document.getElementById("body");
+	    var currentSize = element.style.fontSize || 18;
+	    element.style.fontSize = ( parseFloat(currentSize) + (multiplier * 4)) + "px";
+			element.style.lineHeight = ( parseFloat(currentSize) + (multiplier) * 4 ) + "px";
 }
-
-		function myFunction(selectTag) {
-		    var listValue = selectTag.options[selectTag.selectedIndex].text;
-		    document.getElementById("body").style.fontSize = listValue;
-				object.style.fontSize="initial";
-				}
 
 
 		</script>
