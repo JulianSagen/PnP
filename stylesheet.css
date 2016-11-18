@@ -331,3 +331,14 @@ body {
 	padding: 0;
 	border-radius: 5px;
 }
+/*W3 standard of hiding labels while still makeing them aviable for screen readers*/
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
