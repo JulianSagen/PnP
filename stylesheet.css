@@ -191,35 +191,23 @@ body {
 }
 
 .background_image {
-	width: 100%;
+	width: 753px;
   height:100vh;
-  max-width: 100%;
-  min-width:100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   background: url("images/headerblur.png")no-repeat;
-  background-size: cover;
-  background-position: center;
+	background-position: left;
 	margin-top: 0;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-align-items: center;
-	align-items: center;
 	padding-top: 2vh;
+	float: left;
 }
 
 
 /*Title and slogan*/
 
 .title {
+	width: 100px;
 	margin: 10px;
 	padding: 10px;
 	margin-top: 12%;
-	text-align: center;
 	color: #ffffff;
 	text-shadow:
 	-2px -2px 5px #212121,
@@ -228,6 +216,7 @@ body {
 	2px  2px 5px #212121;
 	text-transform: uppercase;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	float: left;
 }
 
 .title h1 {
@@ -258,7 +247,16 @@ body {
 }
 
 
+.changeFontSize {
+	width: 100%;
+	float: left;
+}
+
+
 /*Main*/
+main {
+	float: left;
+}
 
 .infobox {
 	margin-left: auto;
@@ -309,6 +307,10 @@ body {
 
 
 /*Footer*/
+
+footer {
+	float: left;
+}
 
 .footerBox {
 	margin-left: auto;
