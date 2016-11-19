@@ -1,349 +1,372 @@
 body {
-	margin: 0;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background-color: #ffffff;
-	font-size: 20px;
-	line-height: 28px;
+    margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 28px;
 }
+
 
 /* Resize text */
 
 .resizeText {
-	width: 30px;
-	height: 30px;
-
-
-
+    width: 30px;
+    height: 30px;
 }
-
 
 
 /* header */
 
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 10px 0 #B5B5B5;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-	opacity: 0.95;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0 #B5B5B5;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.95;
 }
 
 .header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-	font-weight: bold;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: -3px;
 }
 
 .header li a {
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-	color: #0000BF;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #0000BF;
 }
 
-.menu .one li a:hover,
-.menu .one:hover {
-  background-color: #e6f2ff;
-	border-bottom: 3px solid #66b3ff;
+.menu .one li a:hover, .menu .one:hover {
+    background-color: #e6f2ff;
+    border-bottom: 3px solid #66b3ff;
+    margin-bottom: -3px;
 }
 
-.menu .two li a:hover,
-.menu .two:hover {
-  background-color: #ffe6e6;
-	border-bottom: 3px solid #ff9999;
+.menu .two li a:hover, .menu .two:hover {
+    background-color: #ffe6e6;
+    border-bottom: 3px solid #ff9999;
+    margin-bottom: -3px;
 }
 
-.menu .three li a:hover,
-.menu .three:hover {
-  background-color: #e6e6ff;
-	border-bottom: 3px solid #9999ff;
+.menu .three li a:hover, .menu .three:hover {
+    background-color: #e6e6ff;
+    border-bottom: 3px solid #9999ff;
+    margin-bottom: -3px;
 }
 
-.menu .four li a:hover,
-.menu .four:hover {
-  background-color: #e6ffff;
-	border-bottom: 3px solid #00cccc;
+.menu .four li a:hover, .menu .four:hover {
+    background-color: #e6ffff;
+    border-bottom: 3px solid #00cccc;
+    margin-bottom: -3px;
 }
 
 .header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
 }
+
+#maskott {
+    display: inline-block;
+    height: 50px;
+    margin: 0;
+    padding: 3px 12px;
+    float: left;
+}
+
 
 /*menu*/
 
 .header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
+
 
 /*menu icon*/
 
 .header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: #0000BF; /*change color of mid burger*/
-  display: block;
-  height: 3px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 20px;
+    background: #0000BF;
+    /*change color of mid burger*/
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 20px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #0000BF; /*change color of cross*/
-	font-weight: bold;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
+.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #0000BF;
+    /*change color of cross*/
+    font-weight: bold;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+    top: 5px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+    top: -5px;
 }
+
 
 /*menu button*/
 
 .header .menu-btn {
-  display: none;
+    display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
 }
+
 
 /*desktop version*/
 
 @media (min-width: 52em) {
-  .header li {
-    float: left;
-		display: inline-block;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+    .header li {
+        float: left;
+        display: inline-block;
+    }
+    .header li a {
+        padding: 14px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .background_holder_mobile {
+        display: none;
+    }
+    /*Title and slogan*/
+    .imgText {
+        display: -webkit-flex;
+        display: flex;
+        /*webkit is for old Safari browser*/
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    #headerImg {
+        max-width: 600px;
+        margin-top: 10%;
+        overflow: hidden;
+    }
+    #headerImg img {
+        height: 100%;
+    }
+    .title {
+        max-width: 600px;
+        color: #0000BF;
+        text-transform: uppercase;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin-top: 10%;
+        line-height: normal;
+    }
+    .title h1 {
+        font-size: 80px;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+    .title h2 {
+        font-size: 30px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
 }
 
 
-#maskott {
-	display: inline-block;
-	height: 50px;
-	margin: 0px 0 0 0px;
-	padding: 6px 12px;
-	float: left;
+/*mobile version*/
+
+@media (max-width: 52em) {
+    .imgText {
+        display: none
+    }
+    .background_holder_mobile .title {
+        color: #0000BF;
+        text-transform: uppercase;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        margin-top: 0;
+        padding: 20% 20px 30px 20px;
+        text-align: center;
+    }
+    .background_holder_mobile .title h1 {
+        font-size: 80px;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+    .background_holder_mobile .title h2 {
+        font-size: 30px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        line-height: normal;
+    }
 }
-
-/*Cover Photo*/
-
-.background_holder {
-    width: 100%;
-    height: auto;
-    min-height: 200px;
-    position: relative;
-}
-
-.background_image {
-	width: 100%;
-  height:100vh;
-  background: url("images/headerblur.png")no-repeat;
-	background-position: left;
-	margin-top: 0;
-	padding-top: 2vh;
-	float: left;
-}
-
-
-/*Title and slogan*/
-
-.title {
-	width: 20%;
-	margin: 10px;
-	padding: 10px;
-	margin-top: 12%;
-	color: #ffffff;
-	text-shadow:
-	-2px -2px 5px #212121,
-	2px -2px 5px #212121,
-	-2px  2px 5px #212121,
-	2px  2px 5px #212121;
-	text-transform: uppercase;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	float: right;
-	margin-right: 15%;
-}
-
-.title h1 {
- font-size: 80px;
- letter-spacing: 2px;
- display: inline-block;
-}
-
-.title h2 {
-	font-size: 30px;
-	font-weight: lighter;
-	letter-spacing: 1px;
-}
-
-
-/*Title images*/
-
-#titleIcons div {
-	display: inline-block;
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-#titleIcons img {
-	width: 30px;
-	background-color: #1351a3;
-	box-shadow: 1px 1px 5px #383838;
-}
-
-
 
 
 /*Main*/
 
-
 .infobox {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: transparent;
-	padding: 30px 30px 30px 30px;
-	max-width: 1400px;
-	margin-top: 2.5em;
-	margin-bottom: 2.5em;
-	text-decoration: none;
-	list-style: none;
-	text-align: left;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    padding: 30px 30px 30px 30px;
+    max-width: 1400px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+
 /*Headings and text*/
+
 .infobox h3 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	color: #0000BF;
-	margin: 30px 0 40px 0;
-	padding: 40px 0 10px 0;
-	font-size: 35px;
-	font-weight: bold;
-	text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #0000BF;
+    margin: 30px 0 40px 0;
+    padding: 40px 0 10px 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .infobox h4 {
-	font-size: 25px;
-	font-weight: bold;
-	margin: 15px 0 5px 0;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
 }
 
 .infobox h5 {
-	font-size: 20px;
-	font-weight: bold;
-	margin: 10px 0 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
 }
 
 .infobox p {
-	font-family: "Arial", Helvetica, sans-serif;
-
+    font-family: "Arial", Helvetica, sans-serif;
 }
 
 .infobox li {
-	font-family: "Arial", Helvetica, sans-serif;
-	line-height: 28px;
+    font-family: "Arial", Helvetica, sans-serif;
+    line-height: 28px;
 }
 
 
 /*Footer*/
 
-
 .footerBox {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: transparent;
-	padding: 30px 30px 30px 30px;
-	max-width: 1400px;
-	margin-top: 2.5em;
-	margin-bottom: 5em;
-	text-decoration: none;
-	list-style: none;
-	text-align: left;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    padding: 30px 30px 30px 30px;
+    max-width: 1400px;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .footerBox a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 
 /*Footer icons*/
 
 .socialIcons a {
-	text-decoration: none;
-	display: inline-block;
-	margin-right: 15px
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px
 }
 
 .socialIcons img {
-	width: 30px;
-	display: inline;
-	padding: 0;
-	border-radius: 5px;
+    width: 30px;
+    display: inline;
+    padding: 0;
+    border-radius: 5px;
 }
+
+
 /*W3 standard of hiding labels while still makeing them aviable for screen readers*/
+
 .visuallyhidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
+
+
+/* for tekst senere
+
+#titleIcons div {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#titleIcons img {
+    width: 30px;
+    background-color: #1351a3;
+    box-shadow: 1px 1px 5px #383838;
+}*/
+/*Bedre enn float ----> http://www.sketchingwithcss.com/samplechapter/cheatsheet.html#create */
