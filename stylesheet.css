@@ -97,7 +97,7 @@ body {
 
 /*menu icon*/
 
-.header .menu-icon {
+.header .menuIcon {
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -106,7 +106,7 @@ body {
     user-select: none;
 }
 
-.header .menu-icon .navicon {
+.header .menuIcon .navicon {
     background: #0000BF;
     /*change color of mid burger*/
     display: block;
@@ -116,7 +116,7 @@ body {
     width: 20px;
 }
 
-.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+.header .menuIcon .navicon:before, .header .menuIcon .navicon:after {
     background: #0000BF;
     /*change color of cross*/
     font-weight: bold;
@@ -128,38 +128,38 @@ body {
     width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+.header .menuIcon .navicon:before {
     top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+.header .menuIcon .navicon:after {
     top: -5px;
 }
 
 
 /*menu button*/
 
-.header .menu-btn {
+.header .menuButton {
     display: none;
 }
 
-.header .menu-btn:checked~.menu {
+.header .menuButton:checked~.menu {
     max-height: 240px;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon {
+.header .menuButton:checked~.menuIcon .navicon {
     background: transparent;
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:before {
+.header .menuButton:checked~.menuIcon .navicon:before {
     transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked~.menu-icon .navicon:after {
+.header .menuButton:checked~.menuIcon .navicon:after {
     transform: rotate(45deg);
 }
 
-.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+.header .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .header .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
     top: 0;
 }
 
@@ -179,7 +179,7 @@ body {
         float: right;
         max-height: none;
     }
-    .header .menu-icon {
+    .header .menuIcon {
         display: none;
     }
     .background_holder_mobile {
@@ -187,9 +187,9 @@ body {
     }
     /*Title and slogan*/
     .imgText {
+        /*webkit is for old Safari browser*/
         display: -webkit-flex;
         display: flex;
-        /*webkit is for old Safari browser*/
         -webkit-flex-direction: row;
         flex-direction: row;
         -webkit-align-items: center;
@@ -199,8 +199,7 @@ body {
     }
     #headerImg {
         max-width: 600px;
-        margin-top: 10%
-        overflow: hidden;
+        margin-top: 10% overflow: hidden;
     }
     #headerImg img {
         height: 100%;
@@ -369,4 +368,3 @@ body {
     background-color: #1351a3;
     box-shadow: 1px 1px 5px #383838;
 }*/
-/*Bedre enn float ----> http://www.sketchingwithcss.com/samplechapter/cheatsheet.html#create */
