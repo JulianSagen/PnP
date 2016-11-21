@@ -71,9 +71,9 @@ body {
 
 #loo {
     display: inline-block;
-    height: 50px;
+    height: 60px;
     margin: 0;
-    padding: 15px 12px;
+    padding: 10px 10px 6px 10px;
     float: left;
 }
 
