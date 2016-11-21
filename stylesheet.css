@@ -10,7 +10,7 @@ body {
 /* header */
 
 .header {
-    background-color: #fff;
+    background-color: #293664;
     box-shadow: 1px 1px 10px 0 #B5B5B5;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #293664;
     font-weight: bold;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -34,29 +34,29 @@ body {
     display: block;
     padding: 14px 20px;
     text-decoration: none;
-    color: #0000BF;
+    color: #fff;
 }
 
 .menu .one li a:hover, .menu .one:hover {
-    background-color: #e6f2ff;
+    background-color: #4C5982;
     border-bottom: 4px solid #66b3ff;
     margin-bottom: -3px;
 }
 
 .menu .two li a:hover, .menu .two:hover {
-    background-color: #ffe6e6;
+    background-color: #4C5982;
     border-bottom: 4px solid #ff9999;
     margin-bottom: -3px;
 }
 
 .menu .three li a:hover, .menu .three:hover {
-    background-color: #e6e6ff;
+    background-color: #4C5982;
     border-bottom: 4px solid #9999ff;
     margin-bottom: -3px;
 }
 
 .menu .four li a:hover, .menu .four:hover {
-    background-color: #e6ffff;
+    background-color: #4C5982;
     border-bottom: 4px solid #00cccc;
     margin-bottom: -3px;
 }
@@ -73,7 +73,7 @@ body {
     display: inline-block;
     height: 50px;
     margin: 0;
-    padding: 3px 12px;
+    padding: 15px 12px;
     float: left;
 }
 
@@ -96,6 +96,8 @@ body {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .header .menuIcon .navicon {
@@ -131,6 +133,11 @@ body {
 
 /*menu button*/
 
+.menu li{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .header .menuButton {
     display: none;
 }
@@ -154,6 +161,7 @@ body {
 .header .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .header .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
     top: 0;
 }
+
 
 
 /*desktop version*/
