@@ -270,6 +270,10 @@ body {
     }
 }
 
+#map1, #map2 {
+  margin-top: 100px;
+}
+
 
 /*Main*/
 
@@ -376,6 +380,19 @@ footer a {
     position: absolute;
     width: 1px;
 }
+
+#vipps {
+  width: 150px;
+  height: auto;
+
+}
+
+#paypal {
+  height: 150px;
+  height: auto;
+
+}
+
 
 
 /* for tekst senere
