@@ -4,6 +4,11 @@ body {
     background-color: #ffffff;
     font-size: 20px;
     line-height: 150%;
+
+}
+
+p{
+  color: #293664;
 }
 
 
@@ -172,6 +177,7 @@ body {
     .header li {
         float: left;
         display: inline-block;
+        color: #293664;
     }
     .header li a {
         padding: 14px 30px;
@@ -193,7 +199,7 @@ body {
         height: 100vh;
     }
     .imgText img {
-      height: 180px;
+        height: 180px;
     }
     #headerImg {
         max-width: 600px;
@@ -209,12 +215,6 @@ body {
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         margin-top: 2%;
         line-height: normal;
-    }
-    .title h1 {
-        font-size: 80px;
-        letter-spacing: 2px;
-        display: inline-block;
-        text-transform: uppercase;
     }
     .title h2 {
         font-size: 30px;
@@ -240,13 +240,12 @@ body {
         margin-top: 0;
         padding: 20% 20px 30px 20px;
         text-align: center;
+        height: 100vh;
+        position: relative;
     }
-    .background_holder_mobile .title h1 {
-        font-size: 70px;
-        letter-spacing: 2px;
-        display: inline-block;
-        text-align: center;
-        text-transform: uppercase;
+    .background_holder_mobile .title img {
+        max-width: 200px;
+        padding-top: 20%;
     }
     .background_holder_mobile .title h2 {
         font-size: 25px;
@@ -256,12 +255,24 @@ body {
     }
     .background_holder_mobile .title a img {
         width: 50px;
+        position: absolute;
+        margin-left: -25px;
+        bottom: 110px;
+        opacity: 0.5;
+        border-radius: 100%;
     }
     main h1 {
         text-align: center;
     }
     main h2 {
         text-align: left !important;
+    }
+    main h2 {
+        text-align: left !important;
+    }
+
+    p {
+      color: #293664;
     }
     .infoWithImage {
         display: flex;
@@ -306,21 +317,40 @@ main h1 {
     text-align: left;
     padding-bottom: 40px;
     line-height: normal;
+    padding-top: 100px;
 }
+
+
 
 main h2 {
-    font-size: 30px;
-    margin: 10px 0 5px 0;
-    color: #6B84DB;
-    font-weight: lighter;
+    font-size: 25px;
+    margin: 40px 0 0 0;
+    color: #3E5399;
+    font-weight: bold;
     line-height: normal;
 }
 
-main li {
-    font-size: 20px;
-    font-weight: lighter;
+main h3 {
+    font-size: 30px;
+    margin: 40px 0 0 0;
+    color: #3E5399;
+    font-weight: bold;
     line-height: normal;
+    text-align: center;
 }
+main div div img {
+  float: right;
+}
+
+
+p {
+  color: #293664;
+}
+
+.bottomSpace {
+  padding-bottom: 40px;
+}
+
 
 .infoWithImage {
     display: flex;
@@ -351,6 +381,10 @@ footer {
     text-decoration: none;
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+footer a .topSpace {
+    padding-top: 20%;
 }
 
 footer a {
