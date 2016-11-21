@@ -167,6 +167,9 @@ body {
 /*desktop version*/
 
 @media (min-width: 52em) {
+    .background_holder_mobile {
+        display: none;
+    }
     .header li {
         float: left;
         display: inline-block;
@@ -182,20 +185,13 @@ body {
     .header .menuIcon {
         display: none;
     }
-    .background_holder_mobile {
-        display: none;
-    }
     /*Title and slogan*/
     .imgText {
-        /*webkit is for old Safari browser*/
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-direction: row;
         flex-direction: row;
-        -webkit-align-items: center;
         align-items: center;
-        -webkit-justify-content: center;
         justify-content: center;
+        height: 100vh;
     }
     #headerImg {
         max-width: 600px;
@@ -278,7 +274,7 @@ main {
     margin-right: auto;
     background-color: transparent;
     padding: 30px 30px 30px 30px;
-    max-width: 1400px;
+    max-width: 1000px;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     text-decoration: none;
@@ -289,19 +285,24 @@ main {
 main h1 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #0000BF;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
+    padding-top: 20%;
 }
 
 main h2 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
     margin: 10px 0 5px 0;
+    padding-top: 40px;
+    color: #2994FF;
+    font-weight: lighter;
 }
 
 main li {
     font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
 }
 
 .infoWithImage {
@@ -319,32 +320,18 @@ main li {
     padding-right: 50px;
 }
 
-.infoWithImage h2 {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-}
-.infoWithImage h2 {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-}
-
 }
 
 /*Footer*/
 footer {
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
+    background-color: red;
     padding: 30px 30px 30px 30px;
-    max-width: 1400px;
+    max-width: 1000px !important;
     margin-top: 2.5em;
     margin-bottom: 5em;
     text-decoration: none;
-    list-style: none;
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
