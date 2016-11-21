@@ -101,7 +101,7 @@ body {
 }
 
 .header .menuIcon .navicon {
-    background: #0000BF;
+    background: #ffffff;
     /*change color of mid burger*/
     display: block;
     height: 3px;
@@ -111,7 +111,7 @@ body {
 }
 
 .header .menuIcon .navicon:before, .header .menuIcon .navicon:after {
-    background: #0000BF;
+    background: #ffffff;
     /*change color of cross*/
     font-weight: bold;
     content: '';
@@ -202,7 +202,7 @@ body {
     }
     .title {
         max-width: 600px;
-        color: #0000BF;
+        color: #293664;
         text-transform: uppercase;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         margin-top: 10%;
@@ -229,7 +229,7 @@ body {
         display: none
     }
     .background_holder_mobile .title {
-        color: #0000BF;
+        color: #293664;
         text-transform: uppercase;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         margin-top: 0;
@@ -284,7 +284,7 @@ main {
 
 main h1 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: #0000BF;
+    color: #293664;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -295,7 +295,7 @@ main h2 {
     font-size: 30px;
     margin: 10px 0 5px 0;
     padding-top: 40px;
-    color: #2994FF;
+    color: #6B84DB;
     font-weight: lighter;
 }
 
