@@ -248,10 +248,11 @@ body {
     }
     main h1 {
         text-align: center;
-        padding-top: 20%;
+        padding-top: 30% !important;
     }
     main h2 {
         text-align: left !important;
+        padding-top: 30% !important;
     }
     .infoWithImage {
         display: flex;
@@ -307,6 +308,7 @@ main h2 {
     padding-top: 100px;
     color: #6B84DB;
     font-weight: lighter;
+    line-height: normal;
 }
 
 main li {
