@@ -99,7 +99,8 @@ body {
 }
 
 .header .menuIcon .navicon {
-    background: #0000BF; /*change color of mid burger*/
+    background: #0000BF;
+    /*change color of mid burger*/
     display: block;
     height: 3px;
     position: relative;
@@ -108,7 +109,8 @@ body {
 }
 
 .header .menuIcon .navicon:before, .header .menuIcon .navicon:after {
-    background: #0000BF; /*change color of cross*/
+    background: #0000BF;
+    /*change color of cross*/
     font-weight: bold;
     content: '';
     display: block;
@@ -228,6 +230,7 @@ body {
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         margin-top: 0;
         padding: 20% 20px 30px 20px;
+        text-align: center;
     }
     .background_holder_mobile .title h1 {
         font-size: 80px;
@@ -242,10 +245,20 @@ body {
         text-align: center;
     }
     main h1 {
-      text-align: left !important;
+        text-align: center;
+        padding-top: 20%;
     }
     main h2 {
-      text-align: left !important;
+        text-align: left !important;
+    }
+    .infoWithImage {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .reverse {
+        flex-direction: column-reverse !important;
     }
 }
 
@@ -268,8 +281,6 @@ main {
 main h1 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #0000BF;
-    margin: 30px 0 40px 0;
-    padding: 40px 0 10px 0;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -285,9 +296,37 @@ main li {
     font-size: 20px;
 }
 
+.infoWithImage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.infoWithImage img {
+    max-height: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.infoWithImage h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.infoWithImage h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+}
 
 /*Footer*/
-
 footer {
     margin-left: auto;
     margin-right: auto;
@@ -301,20 +340,16 @@ footer {
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
-
 footer a {
     text-decoration: none;
 }
 
-
 /*Footer icons*/
-
 .socialIcons a {
     text-decoration: none;
     display: inline-block;
     margin-right: 15px
 }
-
 .socialIcons img {
     width: 30px;
     display: inline;
@@ -322,9 +357,7 @@ footer a {
     border-radius: 5px;
 }
 
-
 /*W3 standard of hiding labels while still makeing them aviable for screen readers*/
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -335,7 +368,6 @@ footer a {
     position: absolute;
     width: 1px;
 }
-
 
 /* for tekst senere
 
