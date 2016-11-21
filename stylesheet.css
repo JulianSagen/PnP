@@ -264,6 +264,12 @@ body {
     .reverse {
         flex-direction: column-reverse !important;
     }
+    .infoWithImage img {
+        max-height: 300px;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -287,14 +293,15 @@ main h1 {
     color: #293664;
     font-size: 50px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding-top: 20%;
+    padding-bottom: 40px;
 }
 
 main h2 {
     font-size: 30px;
     margin: 10px 0 5px 0;
-    padding-top: 40px;
+    padding-top: 100px;
     color: #6B84DB;
     font-weight: lighter;
 }
@@ -316,17 +323,16 @@ main li {
 
 .infoWithImage img {
     max-height: 300px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
 }
 
-}
 
 /*Footer*/
 footer {
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
     padding: 30px 30px 30px 30px;
     max-width: 1000px !important;
     margin-top: 2.5em;
