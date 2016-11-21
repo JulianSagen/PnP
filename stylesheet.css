@@ -133,7 +133,7 @@ body {
 
 /*menu button*/
 
-.menu li{
+.menu li {
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -163,7 +163,6 @@ body {
 }
 
 
-
 /*desktop version*/
 
 @media (min-width: 52em) {
@@ -191,7 +190,6 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 100vh;
     }
     #headerImg {
         max-width: 600px;
@@ -266,7 +264,7 @@ body {
     }
     .infoWithImage img {
         max-height: 300px;
-        padding-top: 40px;
+        padding-top: 40px !important;
         margin-left: auto;
         margin-right: auto;
     }
@@ -296,6 +294,7 @@ main h1 {
     text-align: left;
     padding-top: 20%;
     padding-bottom: 40px;
+    line-height: normal;
 }
 
 main h2 {
@@ -330,10 +329,11 @@ main li {
 
 
 /*Footer*/
+
 footer {
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 30px 30px 30px;
+    padding: 100px 30px 50px 30px;
     max-width: 1000px !important;
     margin-top: 2.5em;
     margin-bottom: 5em;
@@ -341,16 +341,21 @@ footer {
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
 footer a {
     text-decoration: none;
+    font-weight: bold;
 }
 
+
 /*Footer icons*/
+
 .socialIcons a {
     text-decoration: none;
     display: inline-block;
     margin-right: 15px
 }
+
 .socialIcons img {
     width: 30px;
     display: inline;
@@ -358,7 +363,9 @@ footer a {
     border-radius: 5px;
 }
 
+
 /*W3 standard of hiding labels while still makeing them aviable for screen readers*/
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -369,6 +376,7 @@ footer a {
     position: absolute;
     width: 1px;
 }
+
 
 /* for tekst senere
 
