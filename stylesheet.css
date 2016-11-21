@@ -40,25 +40,25 @@ body {
 .menu .one li a:hover, .menu .one:hover {
     background-color: #4C5982;
     border-bottom: 4px solid #66b3ff;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .menu .two li a:hover, .menu .two:hover {
     background-color: #4C5982;
     border-bottom: 4px solid #ff9999;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .menu .three li a:hover, .menu .three:hover {
     background-color: #4C5982;
     border-bottom: 4px solid #9999ff;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .menu .four li a:hover, .menu .four:hover {
     background-color: #4C5982;
     border-bottom: 4px solid #00cccc;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .header .logo {
