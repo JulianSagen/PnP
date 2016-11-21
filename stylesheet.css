@@ -3,6 +3,7 @@ body {
     font-family: "Arial", Helvetica, sans-serif;
     background-color: #ffffff;
     font-size: 20px;
+    line-height: normal;
 }
 
 
@@ -77,7 +78,7 @@ body {
 }
 
 
-/*menu*/
+/*dropdown menu*/
 
 .header .menu {
     clear: both;
@@ -98,8 +99,7 @@ body {
 }
 
 .header .menuIcon .navicon {
-    background: #0000BF;
-    /*change color of mid burger*/
+    background: #0000BF; /*change color of mid burger*/
     display: block;
     height: 3px;
     position: relative;
@@ -108,8 +108,7 @@ body {
 }
 
 .header .menuIcon .navicon:before, .header .menuIcon .navicon:after {
-    background: #0000BF;
-    /*change color of cross*/
+    background: #0000BF; /*change color of cross*/
     font-weight: bold;
     content: '';
     display: block;
@@ -229,19 +228,24 @@ body {
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         margin-top: 0;
         padding: 20% 20px 30px 20px;
-        text-align: center;
     }
     .background_holder_mobile .title h1 {
         font-size: 80px;
         letter-spacing: 2px;
         display: inline-block;
+        text-align: center;
     }
     .background_holder_mobile .title h2 {
         font-size: 30px;
         font-weight: lighter;
-        letter-spacing: 1px;
-        line-height: normal;
         font-family: "Arial", Helvetica, sans-serif;
+        text-align: center;
+    }
+    main h1 {
+      text-align: left !important;
+    }
+    main h2 {
+      text-align: left !important;
     }
 }
 
