@@ -170,7 +170,7 @@ p{
 
 /*desktop version*/
 
-@media (min-width: 52em) {
+@media (min-width: 50em) {
     .background_holder_mobile {
         display: none;
     }
@@ -230,7 +230,7 @@ p{
 
 /*mobile version*/
 
-@media (max-width: 52em) {
+@media (max-width: 50em) {
     .imgText {
         display: none
     }
