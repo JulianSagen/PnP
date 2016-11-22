@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Arial", Helvetica, sans-serif;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     font-size: 20px;
     line-height: 150%;
 }
@@ -13,7 +13,7 @@ p {
 
 /* header */
 
-.header {
+.navbar {
     background-color: #293664;
     box-shadow: 1px 1px 10px 0 #B5B5B5;
     position: fixed;
@@ -22,7 +22,7 @@ p {
     opacity: 0.95;
 }
 
-.header ul {
+.navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -34,12 +34,13 @@ p {
     margin-top: -3px;
 }
 
-.header li a {
+.navbar li a {
     display: block;
     padding: 14px 20px;
     text-decoration: none;
     color: #fff;
 }
+
 
 .menu .one li a:hover, .menu .one:hover {
     background-color: #4C5982;
@@ -65,7 +66,7 @@ p {
     margin-bottom: -4px;
 }
 
-.header .logo {
+.navbar .logo {
     display: block;
     float: left;
     font-size: 2em;
@@ -84,7 +85,7 @@ p {
 
 /*dropdown menu*/
 
-.header .menu {
+.navbar .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -93,7 +94,7 @@ p {
 
 /*menu icon*/
 
-.header .menuIcon {
+.navbar .menuIcon {
     cursor: pointer;
     display: inline-block;
     float: right;
@@ -104,7 +105,7 @@ p {
     margin-right: 10px;
 }
 
-.header .menuIcon .navicon {
+.navbar .menuIcon .navicon {
     background: #ffffff;
     /*change color of mid burger*/
     display: block;
@@ -114,7 +115,7 @@ p {
     width: 20px;
 }
 
-.header .menuIcon .navicon:before, .header .menuIcon .navicon:after {
+.navbar .menuIcon .navicon:before, .navbar .menuIcon .navicon:after {
     background: #ffffff;
     /*change color of cross*/
     font-weight: bold;
@@ -126,11 +127,11 @@ p {
     width: 100%;
 }
 
-.header .menuIcon .navicon:before {
+.navbar .menuIcon .navicon:before {
     top: 5px;
 }
 
-.header .menuIcon .navicon:after {
+.navbar .menuIcon .navicon:after {
     top: -5px;
 }
 
@@ -142,27 +143,27 @@ p {
     padding-bottom: 12px;
 }
 
-.header .menuButton {
+.navbar .menuButton {
     display: none;
 }
 
-.header .menuButton:checked~.menu {
+.navbar .menuButton:checked~.menu {
     max-height: 330px;
 }
 
-.header .menuButton:checked~.menuIcon .navicon {
+.navbar .menuButton:checked~.menuIcon .navicon {
     background: transparent;
 }
 
-.header .menuButton:checked~.menuIcon .navicon:before {
+.navbar .menuButton:checked~.menuIcon .navicon:before {
     transform: rotate(-45deg);
 }
 
-.header .menuButton:checked~.menuIcon .navicon:after {
+.navbar .menuButton:checked~.menuIcon .navicon:after {
     transform: rotate(45deg);
 }
 
-.header .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .header .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
+.navbar .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .header .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
     top: 0;
 }
 
@@ -173,23 +174,25 @@ p {
     .background_holder_mobile {
         display: none;
     }
-    .header li {
+    .navbar li {
         float: left;
         display: inline-block;
         color: #293664;
     }
-    .header li a {
+    .navbar li a {
         padding: 14px 30px;
     }
-    .header .menu {
+    .navbar .menu {
         clear: none;
         float: right;
         max-height: none;
     }
-    .header .menuIcon {
+    .navbar .menuIcon {
         display: none;
     }
     /*Title and slogan*/
+
+
     .imgText {
         display: flex;
         flex-direction: row;
@@ -202,11 +205,12 @@ p {
     }
     #headerImg {
         max-width: 600px;
-        margin-top: 10% overflow: hidden;
+        margin-top: 20% overflow: hidden;
     }
     #headerImg img {
         height: 500px;
         padding-right: 100px;
+        margin-top: 10%;
     }
     .title {
         max-width: 600px;
@@ -332,6 +336,10 @@ main h3 {
     font-weight: bold;
     line-height: normal;
     text-align: center;
+}
+
+main p {
+  text-align: justify;
 }
 
 main div div img {
