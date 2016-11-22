@@ -4,11 +4,10 @@ body {
     background-color: #ffffff;
     font-size: 20px;
     line-height: 150%;
-
 }
 
-p{
-  color: #293664;
+p {
+    color: #293664;
 }
 
 
@@ -248,8 +247,7 @@ p{
         padding-top: 10%;
     }
     .background_holder_mobile .title h2 {
-        font-size: 20px;
-        font-weight: lighter;
+        font-size: 18px;
         font-family: "Arial", Helvetica, sans-serif;
         text-align: center;
     }
@@ -257,7 +255,7 @@ p{
         width: 50px;
         position: absolute;
         margin-left: -25px;
-        bottom: 115px;
+        bottom: 110px;
         opacity: 0.5;
         border-radius: 100%;
     }
@@ -270,9 +268,8 @@ p{
     main h2 {
         text-align: left !important;
     }
-
     p {
-      color: #293664;
+        color: #293664;
     }
     .infoWithImage {
         display: flex;
@@ -320,8 +317,6 @@ main h1 {
     padding-top: 100px;
 }
 
-
-
 main h2 {
     font-size: 25px;
     margin: 40px 0 0 0;
@@ -338,19 +333,18 @@ main h3 {
     line-height: normal;
     text-align: center;
 }
+
 main div div img {
-  float: right;
+    float: right;
 }
 
-
 p {
-  color: #293664;
+    color: #293664;
 }
 
 .bottomSpace {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
-
 
 .infoWithImage {
     display: flex;
