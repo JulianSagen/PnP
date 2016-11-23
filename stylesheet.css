@@ -163,7 +163,7 @@ p {
     transform: rotate(45deg);
 }
 
-.navbar .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .header .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
+.navbar .menuButton:checked~.menuIcon:not(.steps) .navicon:before, .navbar .menuButton:checked~.menuIcon:not(.steps) .navicon:after {
     top: 0;
 }
 
