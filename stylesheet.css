@@ -205,7 +205,8 @@ p {
     }
     #headerImg {
         max-width: 600px;
-        margin-top: 20% overflow: hidden;
+        margin-top: 20%;
+        overflow: hidden;
     }
     #headerImg img {
         height: 500px;
