@@ -205,13 +205,12 @@ p {
     }
     #headerImg {
         max-width: 600px;
-        margin-top: 20%;
+        margin-top: 10%;
         overflow: hidden;
     }
     #headerImg img {
         height: 500px;
         padding-right: 100px;
-        margin-top: 10%;
     }
     .title {
         max-width: 600px;
