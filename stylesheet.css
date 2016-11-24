@@ -541,8 +541,9 @@ p {
 
 #subfooter {
   text-align: center;
-  height: 20px;
+  height: auto;
   margin-bottom: 30px;
+  padding: 20px;
 }
 
 
