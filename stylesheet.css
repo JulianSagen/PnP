@@ -12,7 +12,8 @@ body {
 p {
     color: #293664;
 }
-/* header */
+
+/* Navigation bar */
 
 .navbar {
     background-color: #293664;
@@ -92,7 +93,7 @@ p {
 }
 
 
-/*menu icon*/
+/* Navigation bar icons*/
 
 .navbar .menuIcon {
     cursor: pointer;
@@ -117,7 +118,6 @@ p {
 
 .navbar .menuIcon .navicon:before, .navbar .menuIcon .navicon:after {
     background: #ffffff;
-    /*change color of cross*/
     font-weight: bold;
     content: '';
     display: block;
@@ -126,7 +126,6 @@ p {
     transition: all .2s ease-out;
     width: 100%;
 }
-
 .navbar .menuIcon .navicon:before {
     top: 5px;
 }
@@ -135,8 +134,7 @@ p {
     top: -5px;
 }
 
-
-/*menu button*/
+/*menu buttons*/
 
 .menu li {
     padding-top: 12px;
@@ -167,6 +165,8 @@ p {
     top: 0;
 }
 
+/* header */
+
 
 /*desktop version*/
 
@@ -190,7 +190,22 @@ p {
     .navbar .menuIcon {
         display: none;
     }
-    /*Title and slogan*/
+    #copyright {
+      float:right;
+      color: black;
+      font-size: 11px;
+      position: relative;
+      font-family: 'Open Sans', sans-serif;
+      margin-right: 10px;
+    }
+    #copyright a {
+      color: black;
+    }
+    #copyright a:visited {
+      color: black;
+    }
+
+/*Background image, title and slogan*/
 
 
     .background_holder {
@@ -243,15 +258,14 @@ p {
 
     }
 
-#app_store img {
-    width: 150px;
-    height: auto;
-    background: rgba(39,62,84,0.82);
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
-
-}
+    #app_store img {
+        width: 150px;
+        height: auto;
+        background: rgba(39,62,84,0.82);
+        overflow: hidden;
+        height: 100%;
+        z-index: 2;
+      }
 
     .title {
         max-width: 600px;
@@ -272,11 +286,6 @@ p {
         margin-top: 50px;
     }
 }
-
-
-
-
-
 
 /*mobile version*/
 
@@ -344,6 +353,10 @@ p {
     #subfooter {
       max-width: 100%;
       text-align: center;
+    }
+
+    #copyright {
+      display: none;
     }
 }
 
@@ -465,7 +478,6 @@ p {
 	vertical-align: top;
 }
 
-
 .left-side{
 	width: 40%;
 }
@@ -474,23 +486,22 @@ p {
   color: #7FA18C;
 }
 
-.middle{
+.middle {
 	width: 35%;
 	display: inline-block;
 }
 
 .middle img{
-	vertical-align: middle;
 	margin-bottom: 10px;
+  vertical-align: middle;
   height:35px;
   width:auto;
 }
 
-.middle p{
+.middle p {
 	display: inline-block;
   color: #D8CBC7;
 }
-
 
 .right-side{
 	width: 20%;
@@ -501,7 +512,6 @@ p {
 	height: 60px;
 }
 
-
 @media (max-width: 50em) {
 
 	.footer .left-side, .middle, .right-side{
@@ -510,11 +520,9 @@ p {
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
-
 }
 
-/*W3 standard of hiding labels while still makeing them aviable for screen readers*/
+/*W3 standard of hiding labels while still makeing them available for screen readers*/
 
 .visuallyhidden {
     border: 0;
@@ -527,46 +535,9 @@ p {
     width: 1px;
 }
 
-#vipps {
-    width: 150px;
-    height: auto;
-    display: inline;
-}
-
-#paypal {
-    height: 150px;
-    height: auto;
-    display: inline;
-}
-
 #subfooter {
   text-align: center;
   height: auto;
   margin-bottom: 30px;
   padding: 20px;
 }
-
-
-/* for tekst senere
-
-#titleIcons div {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-#titleIcons img {
-    width: 30px;
-    background-color: #1351a3;
-    box-shadow: 1px 1px 5px #383838;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 30px 50px 30px;
-    max-width: 1000px !important;
-    margin-top: 2.5em;
-    margin-bottom: 5em;
-    text-decoration: none;
-    text-align: left;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}*/

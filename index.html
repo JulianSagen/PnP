@@ -20,10 +20,10 @@
 <body>
 
 
-		<!--Menu-->
+		<!-- Navigation bar -->
 		<nav class="navbar">
-			<a href="#"><img id="loo" src="images/logo.png" alt="Loo logo" /></a>
-			<!--.Kan sette tekst logo om ønskelig med class="logo"-->
+			<a href="#top"><img id="loo" src="images/logo.png" alt="Loo logo" /></a>
+
 			<label for="menuButton" class="visuallyhidden">Toggle dropdown menu</label>
 			<input class="menuButton" type="checkbox" id="menuButton" />
 			<label class="menuIcon" for="menuButton"><span class="navicon"></span></label>
@@ -31,16 +31,16 @@
 			<ul class="menu">
 				<li class="one"><a href="#problem">Social problem</a></li>
 				<li class="two"><a href="#solution">Our solution</a></li>
-				<li class="three"><a href="#app">Application</a></li>
+				<li class="three"><a href="#app">The app</a></li>
 				<li class="four"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 
 
 	<header>
-
+		<!-- Anchor for navigation to top -->
+		<a name="top">
 		<!--desktop-->
-
 			<div class="background_holder">
 	        <div class="background_image">
 							<div class="title">
@@ -50,22 +50,15 @@
 											We believe toilets should be accessible everywhere. Which is why we made an application that locates one for you.
 											More information about our solution down below.
 										</p>
-
 									<div id="app_store">
 										<p style="margin-top:40px;"> Available soon on </p>
 										<img src="http://i.imgur.com/ZteH4yK.png" alt="Image of Apple app store logo.">
 										<img src="http://i.imgur.com/FGCj1oz.png" alt="Image of Google Play store logo.">
 									</div>
-
-
-
 							</div>
 						</div>
-						</div>
-					</div>
-
-
-
+				</div>
+			</div>
 
 		<!--mobile-->
 
@@ -78,9 +71,13 @@
 				</p>
 			</div>
 		</div>
-
 	</header>
 
+	<!-- Information about copyright -->
+
+	<div id="copyright">
+		"<a href="https://www.flickr.com/photos/jorneriksson/15331626496/in/photostream/">Barcode</a>" by Jørn Eriksson, used under CC BY / Changed from original, added grey layer and several elements
+	</div>
 
 	<!--Information-->
 	<main>
@@ -122,7 +119,7 @@
 			</p>
 			<h2>Future prospects</h2>
 			<p>
-				For the future, we wish to cooperate with restaurants to request the lock-combination for their bathroom doors, if a reciept is registered.
+				For the future, we wish to cooperate with restaurants to request the lock-combination for their bathroom doors, if a receipt is registered.
 			</p>
 		</div>
 
@@ -210,11 +207,12 @@
 			</div>
 		</div>
 	</main>
+
 	<!--Footer-->
-			<footer class="footer">
+			<footer class="footer" id="contact">
 				<div class="left-side">
 					<div>
-						<a href="#">Back to top</a>
+						<a href="#top">Back to top</a>
 					</div>
 					<p>Loo Inc &copy; 2016</p>
 				</div>
