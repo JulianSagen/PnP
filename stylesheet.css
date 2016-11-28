@@ -1,3 +1,4 @@
+/*Inported font used by most of the website*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
@@ -42,7 +43,7 @@ p {
     color: #fff;
 }
 
-
+/*Menu buttons on hover changes background, and adds coloured line*/
 .menu .one li a:hover, .menu .one:hover {
     background-color: #4C5982;
     border-bottom: 4px solid #66b3ff;
@@ -66,7 +67,7 @@ p {
     border-bottom: 4px solid #00cccc;
     margin-bottom: -4px;
 }
-
+/*Styling of toiletpaper logo*/
 .navbar .logo {
     display: block;
     float: left;
@@ -84,7 +85,7 @@ p {
 }
 
 
-/*dropdown menu*/
+/*dropdown menu button css animation for mobile version*/
 
 .navbar .menu {
     clear: both;
@@ -361,7 +362,7 @@ p {
 }
 
 
-/*Main*/
+/*Styling of Main content*/
 
 #problem h1 {
   margin-top: -20px;
@@ -443,7 +444,7 @@ p {
 }
 
 
-/*Footer*/
+/* Footer*/
 
 .footer{
   padding: 100px 30px 50px 30px;
